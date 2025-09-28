@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   description: "Your rock in the turbulent seas of stock trading!",
 };
 
+/**
+ * Root layout component that applies global fonts and renders page content.
+ *
+ * @param children - The React nodes to render inside the root body element.
+ * @returns The top-level HTML structure (`<html lang="en">` with a `<body>` that applies the Geist fonts and `antialiased` class) containing `children`.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
