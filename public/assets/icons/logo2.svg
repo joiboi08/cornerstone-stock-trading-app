@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="30" viewBox="0 0 130 30" fill="none" aria-labelledby="titleDesc">
+    <title id="titleDesc">Cornerstone logo</title>
+
+    <defs>
+        <!-- Premium green gradient per slab for subtle 3D effect -->
+        <linearGradient id="barGradientTop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#66A66A"/>
+            <stop offset="100%" stop-color="#448844"/>
+        </linearGradient>
+
+        <linearGradient id="barGradientMiddle" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#448844"/>
+            <stop offset="100%" stop-color="#2C5C2C"/>
+        </linearGradient>
+
+        <linearGradient id="barGradientBottom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2C5C2C"/>
+            <stop offset="100%" stop-color="#1A3D1A"/>
+        </linearGradient>
+
+        <style>
+            .gold { fill: #D4AF37; stroke: #000000; stroke-width: 0.24; } /* thinner black outline */
+            .word { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 14px; fill: #FFFF; }
+            .symbol { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 11px; }
+        </style>
+    </defs>
+
+    <!-- Symbol group (left) -->
+    <g transform="translate(4,5)" aria-label="Cornerstone symbol">
+        <!-- bottom slab -->
+        <rect x="0" y="15" width="40" height="3.4" rx="0.8" fill="url(#barGradientBottom)"/>
+        <!-- middle slab -->
+        <rect x="4" y="10" width="32" height="3.4" rx="0.8" fill="url(#barGradientMiddle)"/>
+        <!-- top slab -->
+        <rect x="8" y="5" width="24" height="3.4" rx="0.8" fill="url(#barGradientTop)"/>
+        <!-- gold "C" on top with thinner black outline -->
+        <text x="20" y="1" class="gold symbol" dominant-baseline="hanging" text-anchor="middle">C</text>
+    </g>
+
+    <!-- Wordmark: "Cornerstone" -->
+    <text x="52" y="18.5" class="word" dominant-baseline="alphabetic">Cornerstone</text>
+</svg>
